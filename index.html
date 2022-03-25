@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wwebsite</title>
+
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hover-min.css" media="all">
+
+        <script src="https://kit.fontawesome.com/e90b81ffeb.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body onload="document.body.className += ' loaded';" class="fadein">
+        <div id="outer" class="center">
+            <div id="inner" class="center">
+                <div id="menu" onclick="menu_toggle()" onmouseover="menu_show()" onmouseout="menu_unshow()" class="menu fadein">
+                    <a style="top: 35%;" href="#">home</a>
+                    <a style="top: 50%;" href="#">blog</a>
+                    <a style="top: 65%;" href="#">archive</a>
+                </div>
+
+                <img id="av" onload="menu_resize()" class="avatar" width="50%">
+                <i><h4 id="motd"></h4></i>
+
+                <div style="line-height: 20px; opacity: 0;">:)</div>
+
+                <i onclick="social_click(0)" class="hvr-grow fa-brands fa-discord fa-xl"></i>
+                <a href="https://twitter.com/l88ne" target="_blank" class="hvr-grow fa-brands fa-twitter fa-xl"></a>
+                <a href="https://reddit.com/user/l88ne" target="_blank" class="hvr-grow fa-brands fa-reddit fa-xl"></a>
+                <a href="https://l88ne.itch.io" target="_blank" class="hvr-grow fa-brands fa-itch-io fa-xl"></a>
+                <a href="https://github.com/l88ne" target="_blank" class="hvr-grow fa-brands fa-github fa-xl"></a>
+            </div>
+          </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
